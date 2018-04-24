@@ -1,0 +1,30 @@
+{
+  "name": "bathroom-automation-lambda",
+  "version": "1.0.0",
+  "description": "This will be used to automated bathrooms with samsung smartthings.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/showel22/bathroom-automation-lambda.git"
+  },
+  "keywords": [
+    "Smartthings",
+    "Home",
+    "Automation",
+    "Bathroom",
+    "SmartApp",
+    "Lambda"
+  ],
+  "author": "Steven Howell (schowel22@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/showel22/bathroom-automation-lambda/issues"
+  },
+  "homepage": "https://github.com/showel22/bathroom-automation-lambda#readme"
+}
