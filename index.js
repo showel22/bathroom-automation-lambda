@@ -1,5 +1,8 @@
 'use strict';
 
+const pageConfig = require('./lib/pageConfigs');
+
+// Lambda insertion point
 exports.handler = async (event) => {
 
     return handleRequest(event);
@@ -23,7 +26,11 @@ function handleRequest(event){
         }
         
         case 'CONFIGURATION':{
-            break;
+            response = pageConfig.handle(event.configurationData);
+            return {
+                statusCode: 200,
+                configurationData: response
+            };
         }
         
         case 'INSTALL':{
