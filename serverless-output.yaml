@@ -1,13 +1,13 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Transform: AWS::Serverless-2016-10-31
 Description: Samsung Smartthings Bathroom Automation
 Resources:
   BathroomAutomation:
-    Type: AWS::Serverless::Function
     Properties:
-      Handler: index.handler
-      Runtime: nodejs6.10
-      CodeUri: ./
+      CodeUri: s3://bathroom-automation/1aee3ae47dead682478d927a0077062e
       Environment:
         Variables:
           S3_BUCKET: bathroom-automation
+      Handler: index.handler
+      Runtime: nodejs6.10
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31
