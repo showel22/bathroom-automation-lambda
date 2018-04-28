@@ -30,6 +30,7 @@ function handleRequest(event){
             return {
                 statusCode: 200,
                 configurationData: response
+                
             };
         }
         
