@@ -4,8 +4,8 @@ phases:
   install:
     commands:
       - npm install time
-      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket smartthings-bathroom-automation
-                                   --output-template-file outputSamTemplate.yaml
+      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket bathroom-automation
+                                   --output-template-file serverless-output.yaml
 artifacts:
   type: zip
   files:
