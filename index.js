@@ -26,6 +26,7 @@ function handleRequest(event){
         }
         
         case 'CONFIGURATION':{
+            console.log('Running the configuration case.');
             response = pageConfig.handle(event.configurationData);
             return {
                 statusCode: 200,
