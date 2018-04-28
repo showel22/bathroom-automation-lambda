@@ -4,7 +4,7 @@ const pageConfig = require('./lib/pageConfigs');
 
 // Lambda insertion point
 exports.handler = async (event) => {
-
+    console.log(event);
     return handleRequest(event);
 
 };
