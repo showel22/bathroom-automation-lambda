@@ -1,7 +1,7 @@
 {
   "name": "bathroom-automation-lambda",
   "version": "1.0.0",
-  "description": "This will be used to automated bathrooms with samsung smartthings.",
+  "description": "This will be used to automate bathrooms with samsung smartthings.",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/showel22/bathroom-automation-lambda/issues"
   },
-  "homepage": "https://github.com/showel22/bathroom-automation-lambda#readme"
+  "homepage": "https://github.com/showel22/bathroom-automation-lambda#readme",
+  "dependencies": {
+    "prettyjson": "^1.2.1"
+  }
 }
