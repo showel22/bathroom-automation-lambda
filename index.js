@@ -5,8 +5,9 @@ const pageConfig = require('./lib/pageConfigs');
 // Lambda insertion point
 exports.handler = async (event) => {
     console.log(event);
-    return handleRequest(event);
-
+    let result = handleRequest(event);
+    console.log(`Data sent back to smartthings: ${result}`);
+    return result;
 };
 
 // This function will decide what to do with the request.
@@ -38,7 +39,7 @@ function handleRequest(event){
         case 'INSTALL':{
             console.log('Running the Install case.');
             let token = event.installData.authToken;
-            
+
             break;
         }
         
