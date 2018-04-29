@@ -16,6 +16,7 @@ function handleRequest(event){
     
     switch(lifecycle){
         case 'PING':{
+            console.log('Running the ping case.');
             let chal = event.pingData.challenge;
             return {
                 statusCode: 200,
@@ -31,23 +32,28 @@ function handleRequest(event){
             return {
                 statusCode: 200,
                 configurationData: response
-                
             };
         }
         
         case 'INSTALL':{
+            console.log('Running the Install case.');
+            let token = event.installData.authToken;
+            
             break;
         }
         
         case 'UPDATE':{
+            console.log('Running the Update case.');
             break;
         }
         
         case 'UNINSTALL':{
+            console.log('Running the Uninstall case.');
             break;
         }
         
         case 'EVENT':{
+            console.log('Running the Event case.');
             break;
         }
         
