@@ -5,7 +5,7 @@ const pageConfig = require('./lib/pageConfigs');
 
 // Lambda insertion point
 exports.handler = async (event) => {
-    console.log(event);
+    console.log("From Smartthings \n" + prettyjson.render(event, {}));
     let result = handleRequest(event);
     console.log('Data sent back to smartthings:');
     console.log(prettyjson.render(result, {}));
